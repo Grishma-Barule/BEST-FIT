@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_workout.*
 
 class workout : AppCompatActivity() {
@@ -17,11 +18,18 @@ class workout : AppCompatActivity() {
         buttonexercise = findViewById(R.id.buttonex)
         buttonexercise.setOnClickListener {
             val intent: Intent = Intent(applicationContext,MainActivity2list::class.java)
-               intent.putExtra("TIME",time.toString().toDouble())
-                intent.putExtra("WEIGHT",weight.toString().toDouble()
-                )
+                if(time.isNotEmpty() && weight.isNotEmpty() ) {
+                    val timeee = time.toString().toDouble()
+                    val weightii = weight.toString().toDouble()
 
-                   startActivity(intent)
+                        intent.putExtra("TIME", timeee)
+                        intent.putExtra("WEIGHT", weightii)
+                        startActivity(intent)
+                }else{
+                    Toast.makeText(getBaseContext(),"Input Field is Empty", Toast.LENGTH_LONG).show();
+                }
+
+
         }
     }
 }

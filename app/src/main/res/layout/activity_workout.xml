@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6C5C5"
+    android:background="@drawable/background"
     tools:context=".workout">
 
     <TextView
@@ -22,13 +22,16 @@
 
     <EditText
         android:id="@+id/editTextW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
         android:layout_margin="150dp"
         android:hint="@string/enter_your_weight_in_kgs"
         android:textColor="#570503"
-        android:textColorHint="#857575"
-        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColorHint="#6C5858"
+        android:textSize="22sp"
+
+        android:background="@drawable/inputcard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -50,18 +53,24 @@
 
     <EditText
         android:id="@+id/editTextt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
         android:autofillHints="0"
         android:hint="@string/enter_activity_time_in_mins"
         android:textColor="#570503"
-        android:textColorHint="#857575"
-
-        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColorHint="#6C5858"
+        android:background="@drawable/inputcard"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/buttonex"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.642" />
-
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="400dp"
+      android:src="@drawable/downlogrgad"
+/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,15 +2,14 @@
     <!-- Base application theme. -->
     <style name="Theme.BestFIT" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">#9F0906</item>
+        <item name="colorPrimaryVariant">#AA0A37</item>
+        <item name="colorOnPrimary">#9E7777</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">#9F0906</item>
+        <item name="colorSecondaryVariant">#AA0A37</item>
+        <item name="colorOnSecondary">#9E7777</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
     </style>
 </resources>
